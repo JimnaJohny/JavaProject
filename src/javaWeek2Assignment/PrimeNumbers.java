@@ -10,9 +10,9 @@ public class PrimeNumbers {
 		 Scanner sc = new Scanner(System.in);
 		 System.out.println("Enter a positive Integer: ");
 		 num = sc.nextInt();
-		  for(int i=2;i<=num/2;i++)
+		  for(int i=2;i<=num-1;i++)
 		 {
-			 if(num%2==0)
+			 if(num%i==0)
 				 flag=1;
 			 break;
 		 }

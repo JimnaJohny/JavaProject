@@ -4,9 +4,10 @@ public class WaterTankMainClass {
 
 	public static void main(String[] args){
 	int totalVolume=0;
-	for(int i=1;i<=10;i++)
+	for(int initialVolume=20;initialVolume<=100;initialVolume++)
 	{
-		totalVolume=i*10;
+		totalVolume=initialVolume*10;
+		System.out.println("Watertank contains "+totalVolume+" litres of water");
 	}
 	System.out.println("Tank is reached to its maximum capacity of " + totalVolume + " litres");
 	

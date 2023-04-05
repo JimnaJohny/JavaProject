@@ -22,7 +22,7 @@ public class UsernameClass {
 			}
 			else
 			{
-				System.out.println("Incorrect User id or password. Try again");
+				System.out.println("Incorrect User id or password");
 				if(counter==3)
 				System.out.println("Account locked");	
 			}
