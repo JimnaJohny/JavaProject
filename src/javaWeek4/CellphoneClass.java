@@ -13,6 +13,7 @@ public class CellphoneClass {
 	int price;
 	String model;
 	String modelName;
+	int flag=0;
 	Scanner sc = new Scanner(System.in);
 
 	void samsungBrand() {
@@ -23,9 +24,12 @@ public class CellphoneClass {
 		model = sc.nextLine();
 		for (i = 0; i < samsung.length; i++)
 			if (samsung[i].equals(model)) {
+				flag=1;
 				modelName = samsung[i];
 				price = phoneTabSamsung[i];
 			}
+			if(flag==0)
+				System.out.println("Invalid Entry!");
 	}
 
 	void appleBrand() {
@@ -36,9 +40,12 @@ public class CellphoneClass {
 		model = sc.nextLine();
 		for (i = 0; i < apple.length; i++)
 			if (apple[i].equals(model)) {
+				flag=1;
 				modelName = apple[i];
 				price = phoneTabApple[i];
 			}
+			if(flag==0)
+				System.out.println("Invalid Entry!");
 	}
 
 	void monthlyPlan(String plan) {

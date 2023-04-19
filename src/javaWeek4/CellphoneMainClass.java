@@ -14,6 +14,7 @@ public class CellphoneMainClass {
 		if (os.equals("Android"))
 			cell.samsungBrand();
 		else if (os.equals("IOS"))
+
 			cell.appleBrand();
 		else {
 			System.out.println("Invalid OS");

@@ -1,11 +1,13 @@
 package javaWeek4;
+
 import java.util.Scanner;
+
 public class CrsScoreMain {
 
 	public static void main(String[] args) {
 		String education;
-		CrsScoreClass crs=new CrsScoreClass();
-		Scanner sc=new Scanner(System.in);
+		CrsScoreClass crs = new CrsScoreClass();
+		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter your education level: ");
 		education = sc.nextLine();
 		crs.educationPoints(education);
@@ -13,7 +15,5 @@ public class CrsScoreMain {
 		crs.agePoints();
 		crs.ieltsPoints();
 		crs.adaptability();
-
 	}
-
 }
